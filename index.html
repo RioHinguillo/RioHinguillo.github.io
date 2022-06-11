@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Portfolio </title>
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+
+}
+
+.nav a {
+  float: right;
+  color: #d69a2d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.nav a.active {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bgimg {
+  float: left;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.professionimg {
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.picimg {
+  float: right;
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.5%;
+  margin-right: 5%;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  .bgimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .professionimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin-top: 35%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .picimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin-top: 20%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div style="position: absolute; top: 5px; left: 25px;"> 
+  <a href="https://www.facebook.com/apong.hinguillo">
+    <img src="img/name.png" style="height: 40px;">
+  </a>
+</div>
+
+<div class="nav">
+  <a href="Contact.html">Contact</a>
+  <a href="Skills.html">Skills</a>
+  <a href="About.html">About</a>
+  <a class="active" href="index.html">Home</a>
+</div>
+
+<img src="img/bg.png" class="bgimg">
+
+<img src="img/pic.jpg" class="picimg">
+
+<img src="img/profession.png" class="professionimg">
+<p style="margin-left: 75px; text-decoration: none; font-weight: bold; font-family: Helvetica;">
+  <a href="https://www.facebook.com/apong.hinguillo">
+    Rio Hinguillo
+  </a>
+  | rioaponghinguillo@gmail.com
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Portfolio </title>
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+
+}
+
+.nav a {
+  float: right;
+  color: #d69a2d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.nav a.active {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.homeimg {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1%;
+  left: 25%;
+}
+
+.bgimg {
+  float: left;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.name2img {
+  width: 25%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.certificateimg {
+  float: right;
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 6%;
+  margin-right: 2%;
+}
+
+p {
+  margin-top: 1%;
+  margin-left: 6%;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5;
+  width: 700px;
+  height: auto;
+  border: 3px solid #e9eae8;
+}
+
+@media screen and (max-width: 800px) {
+  .homeimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bgimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .name2img {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .certificateimg {
+    float: left;
+    position: absolute;
+    margin-top: 20%;
+    height: 50%;
+    width: 70%;
+    margin-left: -15%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div style="position: absolute; top: 5px; left: 25px;"> 
+  <a href="https://www.facebook.com/apong.hinguillo">
+    <img src="img/name.png" style="height: 40px;">
+  </a>
+</div>
+
+<div class="nav">
+  <a href="Contact.html">Contact</a>
+  <a href="Skills.html">Skills</a>
+  <a class="active" href="About.html">About</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div style="position: absolute; float: left; top: 50px; left: 35%;">
+  <a href="index.html">
+    <img src="img/home.png" class="homeimg">
+  </a>
+</div>
+
+<img src="img/bg.png" class="bgimg">
+
+<img src="img/name2.png" class="name2img">
+
+<img src="img/certificate.jpg" class="certificateimg">
+
+<p>
+	is currently a third-year college in
+	STI College Global City. He is aiming
+	to obtain an information technology
+	related position where he can apply
+	his   <a href="Skills.html">skills.
+</p>
+
+</body>
+</html>

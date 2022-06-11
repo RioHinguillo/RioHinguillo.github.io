@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Portfolio </title>
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+  font-weight: bold;
+}
+
+.nav {
+  overflow: hidden;
+
+}
+
+.nav a {
+  float: right;
+  color: #d69a2d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.nav a.active {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bgimg {
+  float: left;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .bgimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+    height: 80%;
+  }
+}
+
+.skillsimg {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .skillsimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.meter {
+  width: 100%;
+  background-color: #fff;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 85%; background-color: #425563;}
+.css {width: 80%; background-color: #d69a2d;}
+.js {width: 75%; background-color: #797c5d;}
+.php {width: 85%; background-color: #d0c8b6;}
+.hardware-installing {width: 90%; background-color: #524f4a;}
+
+p {
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div style="position: absolute; top: 5px; left: 25px;"> 
+  <a href="https://www.facebook.com/apong.hinguillo">
+    <img src="img/name.png" style="height: 40px;">
+  </a>
+</div>
+
+<div class="nav">
+  <a href="Contact.html">Contact</a>
+  <a class="active" href="Skills.html">Skills</a>
+  <a href="About.html">About</a>
+  <a href="index.html">Home</a>
+</div>
+
+<img src="img/bg.png" class="bgimg">
+
+<div>
+  <a href="index.html">
+    <img src="img/skills.png" class="skillsimg">
+  </a>
+</div>
+
+<p>HTML</p>
+<div class="meter">
+  <div class="skills html">85%</div>
+</div>
+
+<p>CSS</p>
+<div class="meter">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="meter">
+  <div class="skills js">75%</div>
+</div>
+
+<p>PHP</p>
+<div class="meter">
+  <div class="skills php">85%</div>
+</div>
+
+<p>Harware Installing</p>
+<div class="meter">
+  <div class="skills hardware-installing">90%</div>
+</div>
+
+</body>
+</html>
+

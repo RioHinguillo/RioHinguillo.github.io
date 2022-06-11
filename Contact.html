@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Portfolio </title>
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+}
+
+.nav a {
+  float: right;
+  color: #d69a2d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.nav a.active {
+  color: #425563;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bgimg {
+  float: left;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .bgimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 100%;
+    height: 80%;
+  }
+}
+
+.contactimg {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .contactimg {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #425563;
+  color: #d69a2d;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #d69a2d;
+  color: #425563;
+}
+
+.contactbg {
+  padding: 20px;
+  background: #e9e8e0;
+  border-radius: 25px;
+  margin: auto;
+  width: 70%;
+}
+
+.leftside {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.rightside {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .leftside, .rightside, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div style="position: absolute; top: 5px; left: 25px;"> 
+  <a href="https://www.facebook.com/apong.hinguillo">
+    <img src="img/name.png" style="height: 40px;">
+  </a>
+</div>
+
+<div class="nav">
+  <a class="active" href="Contact.html">Contact</a>
+  <a href="Skills.html">Skills</a>
+  <a href="About.html">About</a>
+  <a href="index.html">Home</a>
+</div>
+
+<img src="img/bg.png" class="bgimg">
+
+<div>
+  <a href="index.html">
+    <img src="img/contact.png" class="contactimg">
+  </a>
+</div>
+
+<h1 style="text-align: center;"> Interested? </h1>
+<p style="text-align: center;"> Send me a message. </p>
+
+<div class="contactbg">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="leftside">
+        <label for="fname" style="font-weight: bold; font-family: Helvetica; color: #797c5d;">First Name</label>
+      </div>
+      <div class="rightside">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name" style="font-family: Arial;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="leftside">
+        <label for="lname" style="font-weight: bold; font-family: Helvetica; color: #797c5d;">Last Name</label>
+      </div>
+      <div class="rightside">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" style="font-family: Arial;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="leftside">
+        <label for="subject" style="font-weight: bold; font-family: Helvetica; color: #797c5d;">Subject</label>
+      </div>
+      <div class="rightside">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; font-family: Arial;"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
